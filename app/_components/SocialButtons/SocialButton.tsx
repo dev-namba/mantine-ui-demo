@@ -14,11 +14,18 @@ export function SocialButton() {
         <ActionIcon variant="filled" aria-label="Settings" size="lg">
           <IconBrandDiscord style={{ width: '70%', height: '70%' }} stroke={1.5} />
         </ActionIcon>
-        <Link href="https://github.com/oniya-with-chats" target="_blank" rel="noopener noreferrer">
-          <ActionIcon variant="filled" aria-label="Settings" size="lg">
-            <IconBrandGithub style={{ width: '70%', height: '70%' }} stroke={1.5} />
-          </ActionIcon>
-        </Link>
+
+        <ActionIcon
+          variant="filled"
+          aria-label="Settings"
+          size="lg"
+          component={Link}
+          href="https://github.com/oniya-with-chats"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <IconBrandGithub style={{ width: '70%', height: '70%' }} stroke={1.5} />
+        </ActionIcon>
         <ActionIcon variant="filled" aria-label="Settings" size="lg">
           <IconBrandX style={{ width: '70%', height: '70%' }} stroke={1.5} />
         </ActionIcon>
